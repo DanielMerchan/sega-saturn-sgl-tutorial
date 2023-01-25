@@ -5,8 +5,7 @@
 
 extern PDATA PD_PLANE1;
 
-int main(void)
-{
+int main(void) {
 	static ANGLE ang[XYZ];
 	static FIXED pos[XYZ];
 
@@ -17,12 +16,10 @@ int main(void)
 	pos[Y] = toFIXED(0.0);
 	pos[Z] = toFIXED(220.0);
 
-	slPrint("My first sexy Saturn polygon", slLocate(9, 2));
+	slPrint("Sample program 2.2", slLocate(9, 2));
 
-	while (-1)
-	{
-		slPushMatrix();
-		{
+	while (-1) {
+		slPushMatrix(); {
 			slTranslate(pos[X], pos[Y], pos[Z]);
 			slRotX(ang[X]);
 			slRotY(ang[Y]);
