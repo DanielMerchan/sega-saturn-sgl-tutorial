@@ -1,4 +1,3 @@
-
 # Example S_2_2
 
 ## Documentation reference
@@ -6,6 +5,8 @@
 _SGL Developer's Manual Tutorial.pdf_
 
 _Chapter 2: Graphics_
+
+_Example: S_2_2 render a polygon (2D square)_
  
 ## Learning
 
