@@ -1,16 +1,31 @@
 # Sega Saturn SGL Graphics Tutorial examples
+ 
+Repository including the examples of the _SGL Developer's Manual Tutorial.pdf_ with a `README.md` personal explanation of every example.
 
-Just a repository based on the SGL Libraries examples of Sega Saturn. Growing the repo at the time I learn from the manual.
+This is a learning repository, but the idea is to be able someday to make my first homebrew game for `Sega Saturn`
 
-The idea is to reach a point when I can do my own homebrew game based on SGL + Jo Engine
+## Setup Development Environment
+Clone the repository and open it, for example, with *Visual Studio Code*. 
+If you are familiar with the C / C++ extension then make sure you add the necessary compiler paths to it so you can get rid of the *include errors* you may in the *.c* files.
+> Check https://www.infochunk.com/saturn/vscode.html if needed
 
-# Credits : 
-The compiler setup is very similar to the Jo Engine setup and it uses Johannes Fetz's cue maker. 
+## Project Structure
+Every project follows the same structure which has been copied from the repository mentioned in the *Credits* section. You can find the following files
 
+- `clean.bat`: Cleans the C compile objects and the generated **.cue** and executable files for `Sega Saturn`
+- `compile.bat`: Compiles the project and generates the executables such as the **.cue** which can be played in a `Sega Saturn` emulator or burn a CD to be run in the `Sega Saturn` hardware instead.
+- `Mednafen.bat`: Ejecutes the generated **.cue** in the Mednafen emulator.
+
+Also two folders are found
+
+- `ZTE`: Configures the workarea and setup many variables such as the **maximum vertices** or **maximun polygons**
+- `cd`: Folder which needs to exist by the compiler setup in order to produce the **cue** file
+
+The `main.c` is the game infinitie loop.
+
+# Credits 
 Compiler setup taken from XL2's Sonic Z-treme code: https://github.com/Maxime-XL2/SONIC-Z-TREME
-
-Following the Sega Saturn SGL Graphics Developer manual found in: https://antime.kapsi.fi/sega/docs.html
-
-Video tutorials by Emerald Nova: https://youtu.be/ZaNT7oxlBwI
-
+Sega Saturn manual's can be found at: https://antime.kapsi.fi/sega/docs.html and also the `sgl302j.rar` with the examples of the tutorial of this repo.
+ 
+Video tutorials by Emerald Nova about Sega Saturn SGL: https://www.youtube.com/watch?v=ZaNT7oxlBwI&list=PLlJhkcyS6fn3fYygxnScccr5e4w1C9Xrp
 
