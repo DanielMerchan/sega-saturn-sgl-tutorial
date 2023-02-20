@@ -21,11 +21,11 @@ static POLYGON polygon_CUBE[]={
 	};
 
 static ATTR attribute_CUBE[]={
-	ATTRIBUTE(Single_Plane,SORT_MIN,No_Texture,C_RGB( 0,20,28),No_Gouraud,MESHoff,sprPolygon,UseLight),
-	ATTRIBUTE(Single_Plane,SORT_MIN,No_Texture,C_RGB(28, 8, 0),No_Gouraud,MESHoff,sprPolygon,UseLight),
-	ATTRIBUTE(Single_Plane,SORT_MIN,No_Texture,C_RGB( 8,28, 0),No_Gouraud,MESHoff,sprPolygon,UseLight),
-	ATTRIBUTE(Single_Plane,SORT_MIN,No_Texture,C_RGB(28,20, 0),No_Gouraud,MESHoff,sprPolygon,UseLight),
-	ATTRIBUTE(Single_Plane,SORT_MIN,No_Texture,C_RGB(16, 0,28),No_Gouraud,MESHoff,sprPolygon,UseLight),
+	ATTRIBUTE(Single_Plane,SORT_MIN,No_Texture,C_RGB(0,20,28),No_Gouraud,MESHoff,sprPolygon,UseLight),
+	ATTRIBUTE(Single_Plane,SORT_MIN,No_Texture,C_RGB(28,8,0),No_Gouraud,MESHoff,sprPolygon,UseLight),
+	ATTRIBUTE(Single_Plane,SORT_MIN,No_Texture,C_RGB(8,28,0),No_Gouraud,MESHoff,sprPolygon,UseLight),
+	ATTRIBUTE(Single_Plane,SORT_MIN,No_Texture,C_RGB(28,20,0),No_Gouraud,MESHoff,sprPolygon,UseLight),
+	ATTRIBUTE(Single_Plane,SORT_MIN,No_Texture,C_RGB(16,0,28),No_Gouraud,MESHoff,sprPolygon,UseLight),
 	ATTRIBUTE(Single_Plane,SORT_MIN,No_Texture,C_RGB(28,20,16),No_Gouraud,MESHoff,sprPolygon,UseLight),
 };
 
