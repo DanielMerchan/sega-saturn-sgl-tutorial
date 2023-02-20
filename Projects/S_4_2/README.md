@@ -6,7 +6,7 @@ _SGL Developer's Manual Tutorial.pdf_
 
 _Chapter 2: Coordinate Transformation_
 
-_Example: S_4_2 Perspective Control
+_Example: S_4_2 Perspective Control_
 
 ## Learning  
 
