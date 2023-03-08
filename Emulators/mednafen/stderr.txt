@@ -1,4 +1,4 @@
 
-Usage: C:\Users\Maxime\OneDrive\Documents\SATURN\DEV\Emulators\mednafen\mednafen.exe [OPTION]... [FILE]
+Usage: C:\Programming\Projects\Videogames\Sega\Saturn\sega-saturn-sgl-tutorial\Emulators\mednafen\mednafen.exe [OPTION]... [FILE]
 	Please refer to the documentation for option parameters and usage.
 

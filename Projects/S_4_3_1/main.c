@@ -7,6 +7,7 @@
 extern PDATA PD_PLANE1;
 
 int main(void) {
+
     /* Position and angle definitios for the polygon */
     static ANGLE ang[XYZ];
     static FIXED pos[XYZ];
@@ -25,7 +26,7 @@ int main(void) {
             slRotX(ang[X]);
             slRotY(ang[Y]);
             slRotZ(ang[Z]);
-            ang[Y] += DEGtoANG(5.0);
+            ang[Y] += DEGtoANG(5.0); // Increasing the Angle of rotation
             slPutPolygon(&PD_PLANE1);
         }
         slPopMatrix();
