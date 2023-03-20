@@ -6,7 +6,7 @@ _SGL Developer's Manual Tutorial.pdf_
 
 _Chapter 4: Coordinate Transformation_
 
-_Example: S_4_3_4 Parallel shift for a polygon_
+_Example: S_4_3_4 Enlargement and reduction of a polygon (scaling objects)_
 
 ## Learning  
 
@@ -23,9 +23,14 @@ Reminder
 - The **Projection concepts** are very important to understand how graphics are projected into the **projection surface**. At the end, the projection surface is the *TV / Monitor screen* and the image is mapped onto the screen coordinate system.
 - The **Viewing volume** is the space projected onto the **projection surface**. In *Sega Saturn* this is controlled by the **perspective angle** and the **display level** (also known as Front boundary surface which will be explained in 3D clipping concepts during the same chapter) which can be setup using `slPerspective` and `slZdspLevel` functions respectrively.
 
-This example shows already the concepts of the **Modeling transformation** by placing the polygon in the middle of the screen and then ....
+This example shows already the concepts of the **Modeling transformation** by placing the polygon in the middle of the screen and then scaling it by enlarging it or reducing it.
 
-The `main.c` game illustrates the shift / translate of a polygon along the **X-Axis**:
+The `main.c` game illustrates the enlargement and reduction of the polygon by sclaing it in the **X-Axis** and **Y-Axis**:
 
-- The `slTranslate` positions in the coordinate system the polygon defined in `polygon.c` 
-- The routine in `slPushMatrix` applies a change into the `pos[X]` between a value defined by the macro `POS_Z` and the `sin` of an increasing angle. This means it goes from the range **[`-POS_Z`,`POZ_Z`]**
+- The `slScale` allows to enlarge / reduce the polygon defined in `polygon.c` 
+- The `slPushMatrix` routine goes from `-1.0 <= scale <= 1.0` value to demonstrate how the polygon changes
+- `scale = 0.0` means that the polygon dissapear on that axis
+- `scale < 0.0` means it mirrors the image
+- `0.0 < scale < 1.0` means it is reduced
+- `scale = 1.0` means it is unchanged
+- `1.0 < scale` means it is enlarged
