@@ -6,7 +6,7 @@ _SGL Developer's Manual Tutorial.pdf_
 
 _Chapter 4: Coordinate Transformation_
 
-_Example: S_4_3_3 Parallel shift for a polygon _
+_Example: S_4_3_3 Parallel shift for a polygon_
 
 ## Learning  
 
