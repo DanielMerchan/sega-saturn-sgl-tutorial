@@ -3,7 +3,9 @@
 /*----------------------------------------------------------------------*/
 #include "sgl.h";
 
-#define REFLECT_EXTENT toFIXED(85.0) /* Collision point as internal cube is 15 on each coordinate*/
+#define REFLECT_EXTENT                                              \
+    toFIXED(85.0) /* Collision point as internal cube is 15 on each \
+                     coordinate*/
 #define XSPD toFIXED(1.5)
 #define YSPD toFIXED(2.0)
 #define ZSPD toFIXED(3.0)
@@ -16,14 +18,14 @@ extern PDATA PD_PLANE1, PD_PLANE2;
 /**
  * Exercise to put in practice the concepts learn in S_2_2 to S_4_5
  * Corresponds to Chapters 2, 3 and 4
-*/
+ */
 int main(void) {
     static ANGLE ang1[XYZ], ang2[XYZ];
     static FIXED pos1[XYZ], pos2[XYZ], delta[XYZ], light[XYZ];
 
     /* 1. Initialize the system */
     slInitSystem(TV_320x224, NULL, 1);
-    slPrint("Demo A", slLocate(9,2));
+    slPrint("Demo A", slLocate(9, 2));
 
     /* 2. Set initial object angle */
     ang1[X] = ang1[Y] = ang1[Z] = DEGtoANG(0.0);
@@ -38,8 +40,8 @@ int main(void) {
     delta[X] = XSPD, delta[Y] = YSPD, delta[Z] = ZSPD;
 
     /* 5. Light vector intialization */
-    light[X] = slSin(DEGtoANG(30.0)); /* Sin 30 degrees = 0.5 */
-    light[Y] = slCos(DEGtoANG(30.0)); /* Cos 30 degrees = 0.86 */
+    light[X] = slSin(DEGtoANG(30.0));  /* Sin 30 degrees = 0.5 */
+    light[Y] = slCos(DEGtoANG(30.0));  /* Cos 30 degrees = 0.86 */
     light[Z] = slSin(DEGtoANG(-30.0)); /* Sin -30 degrees = -0.5 */
 
     /* 6. Main game loop */
@@ -48,7 +50,8 @@ int main(void) {
         slLight(light);
 
         /* 8. Place small cube, object 1 */
-        slPushMatrix(); {
+        slPushMatrix();
+        {
             /* Shift the object*/
             slTranslate(pos1[X], pos1[Y], pos1[Z] + toFIXED(270.0));
 
@@ -59,22 +62,22 @@ int main(void) {
 
             /* Collision detection for correction */
             if (pos1[X] > REFLECT_EXTENT) {
-				delta[X] = -XSPD, pos1[X] -= XSPD;
-			} else if (pos1[X] < -REFLECT_EXTENT) {
-				delta[X] = XSPD, pos1[X] += XSPD;
-			}
+                delta[X] = -XSPD, pos1[X] -= XSPD;
+            } else if (pos1[X] < -REFLECT_EXTENT) {
+                delta[X] = XSPD, pos1[X] += XSPD;
+            }
 
-			if (pos1[Y] > REFLECT_EXTENT) {
-				delta[Y] = -YSPD, pos1[Y] -= YSPD;
-			} else if(pos1[Y] < -REFLECT_EXTENT) {
-				delta[Y] = YSPD, pos1[Y] += YSPD;
-			}
-            
-			if (pos1[Z] > REFLECT_EXTENT) {
-				delta[Z] = -ZSPD, pos1[Z] -= ZSPD;
-			} else if (pos1[Z] < -REFLECT_EXTENT) {
-				delta[Z] = ZSPD, pos1[Z] += ZSPD;
-			}
+            if (pos1[Y] > REFLECT_EXTENT) {
+                delta[Y] = -YSPD, pos1[Y] -= YSPD;
+            } else if (pos1[Y] < -REFLECT_EXTENT) {
+                delta[Y] = YSPD, pos1[Y] += YSPD;
+            }
+
+            if (pos1[Z] > REFLECT_EXTENT) {
+                delta[Z] = -ZSPD, pos1[Z] -= ZSPD;
+            } else if (pos1[Z] < -REFLECT_EXTENT) {
+                delta[Z] = ZSPD, pos1[Z] += ZSPD;
+            }
 
             /* Set object angle */
             slRotX(ang1[X]);
@@ -92,10 +95,11 @@ int main(void) {
         slPopMatrix();
 
         /* 9. Place big cube, object 2 */
-        slPushMatrix(); {
+        slPushMatrix();
+        {
             /* Shift / Translate the object 2 which is the big cube */
             slTranslate(pos2[X], pos2[Y], pos2[Z] + toFIXED(170.0));
-            
+
             /* Rotation of the object 2 */
             slRotX(ang2[X]);
             slRotY(ang2[Y]);
