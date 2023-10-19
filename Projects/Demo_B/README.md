@@ -13,7 +13,7 @@ _Example: demo_B_
 This chapter puts into place a more complex example than the one in `S_5_2`
 
 In this case we have three polygon defined in `polygon.c`:
-- `PD_PLANE1` represents a rectangle in colour "bluish" (I can't see more than 8 colours)
+- `PD_PLANE1` represents a rectangle in colour "blueish" (I can't see more than 8 colours)
 - `PD_PLANE2` represents a rectangle same size as `PD_PLANE2`, but colour "yellowish"
 - `PD_PLANE3` represents a rectangle same size as `PD_PLANE3`, but colour "pinkish"
 
