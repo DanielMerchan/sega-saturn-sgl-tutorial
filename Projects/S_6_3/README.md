@@ -24,4 +24,4 @@ The `main.c` game make sure you have a look into:
 
 - `slLookAt` which initializes the camera
 - `CAMERA` which is a struct to handle the camera settings easily
-- `cubepos` Contains 4 coordinates to position the same CUBE
+- `cubepos` Contains 4 coordinates to position the cube defined in `polygon.c` in 4 times.
