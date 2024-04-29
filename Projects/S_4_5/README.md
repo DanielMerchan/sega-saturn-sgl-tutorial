@@ -27,7 +27,7 @@ This example explains the concept of **Clipping** and **Windows**.
 
 As a summary on what you can find in the documentation:
 
-- Sega Saturn works with a maximum of 2 windows on one scree. The default window is setup when using `slInitSystem` and another window can be added by using the function `slWindow`
+- Sega Saturn works with a maximum of 2 windows on one screen. The default window is setup when using `slInitSystem` and another window can be added by using the function `slWindow`
 - Objects projected in a window, which is defined by 
     - `left`, `top`, `right`, `bottom` indicating the coordinates of the window
     - `Zlimit`indicates the projection limit. Default `7FFF`
