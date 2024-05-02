@@ -7,17 +7,17 @@
 
 extern PDATA PD_PLANE;
 extern TEXTURE tex_sample[]; // Contains the texture table for SGL (pointer than can  be used later)
-extern PICTURE pic_sample[]; // Contains the texture table for being loaded into VRAM
+extern PICTURE pic_sample[]; // Contains the texture table for being loaded into VDP1 VRAM
 
 /*
- * This routine stores the texture data into VRAM
+ * This routine stores the texture data into VDP1 VRAM
  * slDMACopy receives
  * - src: Starting addresss of source memory area
  * - dst: Starting address of destination memory area
  * - cnt: Block transfer amount (bytes)
  * 
  * pcptr is a pointer to our PICTURE defined in texture.c containing the texture data along with the texture number (texno), Color mode (cmode), Pointer to the texture data (ptrsrc) defined by "TEXDAT"
- * NbPicture the number of Pictures to load into VRAM from 
+ * NbPicture the number of Pictures to load into VDP1 VRAM (starting in SpriteVRAM=0x25c00000)
 */
 void set_texture(PICTURE *pcptr, Uint32 NbPicture) {
     TEXTURE *txptr;
