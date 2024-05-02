@@ -14,7 +14,7 @@ This chapter explains the attributes which are used to describe a polygon / plan
 
 The specification of the polygons used in the samples are in the `polygon.c` source file.
 
-**Note:** In this example we will play with the `texture` attribute (which is the third one in a polyfon / plane definition)
+**Note:** In this example we will play with the `texture` attribute (which is the third one in a polyfon / plane definition). Sprites and textures are loaded and managed by VDP1 and thefore stored in VDP1 VRAM memory addresses
 
 This particular example contains an extra source file, `texture.c`, which contains:
 
