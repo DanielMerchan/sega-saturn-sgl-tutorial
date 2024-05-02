@@ -43,7 +43,7 @@ Explaining how the example works.
         - Code explanation:
             - The loop can be exotic (loop syntax of C), but only says. NbPicture-- (decrease until 0) and iterate to the next `PICDEF` pointer with `pcptr++`
             - The texture pointer `TEXDEF` in SGL can be calculate as `txptr = tex_sample + pcptr->texno;` which is basically accessing to the `texno` index (array) of `tex_sample`
-            - `slDMACopy` routine is used to copy into VRAM the texture
+            - `slDMACopy` Used to transfer blocks using the CPU's DMA function
                 - `src`: Starting address of source memory area. In this case `pcptr->pcsrc`
                 - `dst`: Starting address of the destination memory area. In this case `(void*)(SpriteVRAM+((txptr-> CGadr) << 3))` which is the starting of the VRAM address + `(txptr-> CGadr) << 3)` which is shifted 3 bits
                 - `cnt`: Indicates the block transfer amount. This is calculated using the current `TEXDEF` of `tex_sample` for this iteration (which corresponds to the current texture data)
