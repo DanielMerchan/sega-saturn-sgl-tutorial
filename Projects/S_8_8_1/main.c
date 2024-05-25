@@ -45,6 +45,7 @@ int main(void) {
 	slMapNbg1((void *)NBG1_MAP_ADR , (void *)NBG1_MAP_ADR , (void *)NBG1_MAP_ADR , (void *)NBG1_MAP_ADR); // Setup maps
 
 	// Scroll data storage
+	// NOTE: This are auxuliar methods to store data in the VRAM banks THEY ARE NOT SGL FUNCTIONS
 	Cel2VRAM(yama_cel , (void *)NBG1_CEL_ADR , 31808); // Storing the Cell information in VRAM (VDP2)
 	Map2VRAM(yama_map , (void *)NBG1_MAP_ADR , 32 , 16 , 1 , 256); // Storing the Map information in VRAM (VDP2)
 	Pal2CRAM(yama_pal , (void *)NBG1_COL_ADR , 256); // Storing Palette information in VRAM (VDP2)
@@ -56,7 +57,7 @@ int main(void) {
 	slTVOn(); // Start drawing again
 
 	while(1) {
-		slScrPosNbg1(yama_posx , yama_posy); // First call maybe inefficient? 
+		slScrPosNbg1(yama_posx , yama_posy); 
 		yama_posx += POSX_UP;
 		slSynch();
 	} 

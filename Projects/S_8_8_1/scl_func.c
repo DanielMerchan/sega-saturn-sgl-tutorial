@@ -1,7 +1,6 @@
 #include	"sgl.h"
 
-void Cel2VRAM( Uint8 *Cel_Data , void *Cell_Adr , Uint32 suu )
-{
+void Cel2VRAM( Uint8 *Cel_Data , void *Cell_Adr , Uint32 suu ) {
 	Uint32 i;
 	Uint8 *VRAM;
 
@@ -12,8 +11,7 @@ void Cel2VRAM( Uint8 *Cel_Data , void *Cell_Adr , Uint32 suu )
 }
 
 
-void Map2VRAM( Uint16 *Map_Data , void *Map_Adr , Uint16 suuj , Uint16 suui , Uint16 palnum ,Uint32 mapoff)
-{
+void Map2VRAM( Uint16 *Map_Data , void *Map_Adr , Uint16 suuj , Uint16 suui , Uint16 palnum ,Uint32 mapoff) {
 	Uint16 i , j;
 	Uint16 paloff;
 	Uint16 *VRAM;
@@ -32,8 +30,7 @@ void Map2VRAM( Uint16 *Map_Data , void *Map_Adr , Uint16 suuj , Uint16 suui , Ui
 }
 
 
-void Pal2CRAM( Uint16 *Pal_Data , void *Col_Adr , Uint32 suu )
-{
+void Pal2CRAM( Uint16 *Pal_Data , void *Col_Adr , Uint32 suu) {
 	Uint16 i;
 	Uint16 *VRAM;
 
