@@ -1,4 +1,4 @@
-# Example S_7_6
+# Example S_8_8_1
  
 ## Documentation reference
 
