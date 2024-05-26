@@ -1,4 +1,4 @@
-#include	"sgl.h"
-#include	"../scroll/yama.cel"
-#include	"../scroll/yama.map"
-#include	"../scroll/yama.pal"
+#include "sgl.h"
+#include "./SCROLL/YAMA.cel"
+#include "./SCROLL/YAMA.map"
+#include "./SCROLL/YAMA.pal"
