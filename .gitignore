@@ -1,2 +1,8 @@
 /.vscode
 .DS_STORE
+*.bcr
+*.bkr
+*.smpc
+*.o
+*.iso
+*.bin
