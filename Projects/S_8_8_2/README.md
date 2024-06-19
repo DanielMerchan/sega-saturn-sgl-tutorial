@@ -6,7 +6,7 @@ _SGL Developer's Manual Tutorial.pdf_
 
 _Chapter 8: Scroll_
 
-_Example: S_8_8_2 Graphic Scroll (X axis)_
+_Example: S_8_8_2 Graphic Scroll (X & Y axis)_
 
 ## Learning  
 
@@ -30,7 +30,7 @@ Scroll configuration units can be defined hierarchically as following:
 - A **group of character patterns** is called a **page**
 - A **group of pages** is called a **map**
 
-Screen modes. Sega Saturn supports up to **16 screens** modes. We have already configured this unconciously in all the previous steps by invoking the routine `slInitSystem`. But, what does this routine exactly? `slInitSystem(Unit16 type, TEXTURE *textptr, Uint, cnt)
+Screen modes. Sega Saturn supports up to **16 screens** modes. We have already configured this unconciously in all the previous steps by invoking the routine `slInitSystem`. But, what does this routine exactly? `slInitSystem(Unit16 type, TEXTURE *textptr, Uint, cnt)`
 - Initializes the settings for **scrolls**
 - Setup the screen mode by using the pre-defined macros **TV_** (default **TV_320_224**)
 - Sets the starting memory address for textures. NULL when we do not use textures in the example at all.
