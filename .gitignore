@@ -6,3 +6,7 @@
 *.o
 *.iso
 *.bin
+sl_coff.coff
+sl_coff.bin
+sl_coff.map
+sl_coff.cue

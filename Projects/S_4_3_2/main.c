@@ -2,7 +2,7 @@
 /*	Rotation of 1 Polygon [X axis and Y axis]					*/
 /*----------------------------------------------------------------------*/
 
-#include "sgl.h";
+#include "sgl.h"
 
 extern PDATA PD_PLANE1;
 

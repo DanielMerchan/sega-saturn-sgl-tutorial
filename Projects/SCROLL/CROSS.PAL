@@ -1,0 +1,12 @@
+/*	Color Table	*/
+/*	3 color		*/
+
+const Uint16 cross_pal[]={
+	0x001f,0x3c00,0x7fff
+};
+
+const Uint16 cross_pal2[]={
+	0x001f,0x01e0,0x7fff
+};
+
+
