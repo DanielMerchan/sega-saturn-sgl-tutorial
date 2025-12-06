@@ -59,7 +59,7 @@ slTVOff();
 
 slColRAMMode(CRM16_1024);
 
-slBack1ColSet((void*)RBG0_COL_ADR, CD_Black);
+slBack1ColSet((void*)RBG0_COL_ADR, 0);
 
 ```
 3. **Initialise RBG0 Parameter table**
@@ -149,7 +149,7 @@ Because VDP2 handles affine matrix, rotation is smooth and costs almost nothing
 | `slCharRbg0` | Set tile (character) format  |
 | `slPageRbg0` | Set VRAM for tile patterns  |
 | `slPlaneRA` | Set RBG0 plane size  |
-| `sl1MapRA` | Set tile map location |
+| `slMapRA` | Set tile map location |
 | slOverRA | Set layer priority  |
 
 ### VRAM Transfer Helpers (External)
