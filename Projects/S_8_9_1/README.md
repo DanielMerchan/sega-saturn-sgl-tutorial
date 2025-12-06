@@ -4,7 +4,9 @@
 ## Documentation Reference
 
 _SGL Developer’s Manual Tutorial.pdf_
+
 _Chapter 8: Scroll_
+
 _Example: S_8_9_1 – Graphic Rotation_
   
 ## Learning
